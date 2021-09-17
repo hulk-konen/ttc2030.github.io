@@ -1,0 +1,41 @@
+body {
+    background-color: powderblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: tomato 
+}
+ul {
+    text-align: left;
+}
+a:link {
+    color: forestgreen;
+    padding: 10px 10px;
+}
+
+a:visited {
+    color: saddlebrown;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+a:active {
+    color: chartreuse;
+}
+h2 {
+    text-align: center;
+    color: hotpink;
+}
+address {
+    padding-top: 10px;
+}
+p {
+    text-align: left;
+}
+img {
+    margin: 10px;
+}
