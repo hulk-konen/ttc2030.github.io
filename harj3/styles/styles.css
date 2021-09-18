@@ -1,3 +1,4 @@
+/* Font, backgound of the page */ 
 body {
     background-color: powderblue;
     font-family: Helvetica, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -7,10 +8,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* Color of h1, centering */
 h1 {
     text-align: center;
     color: tomato 
 }
+/* Link styles */
 ul {
     text-align: left;
     padding: 0 10%;
@@ -30,6 +33,7 @@ a:hover {
 a:active {
     color: chartreuse;
 }
+/* h2 styling, centering, color */
 h2 {
     text-align: center;
     color: hotpink;
@@ -43,9 +47,11 @@ p {
     text-align: left;
     padding: 0 10%;
 }
+/* Some margin around images */
 img {
     margin: 10px;
 }
+/* Banner styles,  especially colors */
 #banner {
     margin: auto;
     height: 100px;
@@ -53,6 +59,7 @@ img {
     color: ivory;
     padding-top: 20px;
 }
+/* nav bar styling */
 .nav {
     color:darkmagenta;
     background-color:yellow;
