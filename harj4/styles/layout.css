@@ -1,0 +1,75 @@
+/* Font, backgound of the page */ 
+body {
+    background-color: powderblue;
+    font-family: Helvetica, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    margin: 0;
+}
+#page {
+    width: 960px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    height: 660px;
+}
+
+#header {
+    background-color: orange;
+    height: 80px;
+}
+#header_logo, #header_center, #header_right {
+    width: 318px;
+    background-color: orchid;
+    height: 48px;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+#header_logo {
+    border: 1px solid aliceblue;
+} 
+#header_center {
+    border: 1px solid wheat;
+}
+#header_right {
+    border: 1px solid darkturquoise;
+}
+#menu {
+    float: left;
+    height: 30px;
+    width: 960px;
+    background-color: hotpink;
+    text-align: center;
+}
+#content {
+    float: left;
+}
+#content_left {
+    float: left;
+    border: 1px dotted green;
+    margin: 38px;
+    padding-top: 100px;
+    text-align: center;
+    background-color: mintcream;
+    width: 400px;
+    height: 300px;
+}
+#content_right {
+    float: left;
+    border: 1px solid red;
+    margin: 38px;
+    padding-top: 100px;
+    text-align: center;
+    background-color: thistle;
+    width: 400px;
+    height: 300px;
+}
+#footer {
+    float: left;
+    height: 25px;
+    width: 960px;
+    background-color: grey;
+    text-align: center;
+    padding-top: 5px;
+    color: whitesmoke;
+    margin-top: 42px;
+}
