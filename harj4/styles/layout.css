@@ -35,10 +35,11 @@ body {
 }
 #menu {
     float: left;
-    height: 30px;
+    height: 25px;
     width: 960px;
     background-color: hotpink;
     text-align: center;
+    padding-top: 5px;
 }
 #content {
     float: left;
