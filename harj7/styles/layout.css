@@ -1,0 +1,115 @@
+/* Font, backgound of the page */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Montserrat:ital@0;1&display=swap');
+
+* { 
+    margin: 0;
+}
+body {
+    background-color: powderblue;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    text-align: left;
+    margin: 0;
+    font-size: 100%;
+}
+main {
+    width: 90%;
+    background-color: teal;
+    margin: 0 auto;
+}
+header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #575757;
+    color: #F0EBEB;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+nav, footer {
+    height: 1.875em;
+    background-color: #E49A2F;
+    text-align: center;
+    color: #F7F5EE;
+    margin: 0 auto;
+}
+footer {
+padding-top: 0.5em;
+}
+section {
+    background-color: #D8CCAF;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+
+}
+section.content_left {
+    float: left;
+    border: 1px solid #AC9675;
+    margin: 2em;
+    padding: 1%;
+    background-color: #F7F5EE;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 1%;
+}
+section.content_right {
+    float: right;
+    border: 1px solid #AC9675;
+    margin: 2em;
+    padding: 1%;
+    background-color: #F7F5EE;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 1%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E49A2F;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  li {
+    float: left;
+    display: inline;
+    text-align: center;
+}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.375em 16px 0.3125em 16px;
+    text-decoration: none;
+  }
+  a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: blue;
+  }
+  em {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: italic;
+  }
+  h1 {
+    font-family: 'Akronim', cursive;
+  }  
+  h2 {
+    font-family: 'Akronim', cursive;
+  }
+  #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
