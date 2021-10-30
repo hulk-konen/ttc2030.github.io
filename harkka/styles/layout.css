@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Montserrat:ital@0;1&display=swap');
+
+* { 
+    margin: 0;
+}
+/* General page settings, backgound of the page */ 
+body {
+    background-color: powderblue;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    text-align: left;
+    margin: 0;
+    font-size: 100%;
+}
+main {
+    width: 90%;
+    background-color: teal;
+    margin: 0 auto;
+}
+/* global text styles */
+em {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: italic;
+}
+h1 {
+  font-family: 'Akronim', cursive;
+}  
+h2 {
+  font-family: 'Akronim', cursive;
+}
+/* sections */
+footer {
+    padding: 0.5em 0;
+    background-color: #E49A2F;
+    text-align: center;
+    color: #F7F5EE;
+}
+section {
+    background-color: #D8CCAF;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+section.content_left, section.content_right {
+    float: left;
+    border: 1px solid #AC9675;
+    margin: 2em;
+    padding: 1%;
+    background-color: #F7F5EE;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 1%;
+}
+section.content_left {
+    float: left;
+}
+section.content_right {
+    float: right;
+}
+/* nav menu */
+nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #E49A2F;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    color: white;
+    text-decoration: none;
+    background-color: #E49A2F;
+}
+nav ul {
+  padding: 0px;
+}
+nav a:hover:not(.active) {
+  background-color: #111;
+}
+nav .active {
+  background-color: blue;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+    min-height: 60vh;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.hero .left {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background-color: antiquewhite;
+}
+.hero .middle {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  background-color: aqua;
+}
+.hero .right {
+  grid-column: 3 / 3;
+  grid-row: 1;
+  background-color: firebrick;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  min-height: 100vh;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.lefttop {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: wheat;
+}
+.righttop {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  background-color: rebeccapurple;
+}
+.leftbottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+  background-color: tan;
+}
+.rightbottom {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  background-color: yellow;
+}
