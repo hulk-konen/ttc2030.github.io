@@ -5,7 +5,7 @@
 }
 /* General page settings, backgound of the page */ 
 body {
-    background-color: Snow;
+    background-color: #ffffff;
     font-family: "Helvetica", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
     text-align: left;
     margin: 0;
@@ -13,8 +13,11 @@ body {
 }
 main {
     width: 90%;
-    background-color: Snow;
+    background-color: #ffffff;
     margin: 0 auto;
+}
+.projectspage {
+  max-width: 700px;
 }
 /* global text styles */
 em {
@@ -26,6 +29,21 @@ h1 {
 }  
 h2 {
   font-family: 'Helvetica', cursive;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+h3 {
+  font-family: 'Helvetica', cursive;
+  font-size: 2em;
+  font-weight: 400;
+}
+h4 {
+  margin-top: 0.5em;
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 hr {
   border: 1px solid black;;
@@ -95,43 +113,45 @@ nav .active {
 .projects {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 20px 10px; 
+  grid-template-rows: 32% 32% 36%; 
+  gap: 10px 10px; 
   grid-template-areas: 
     "lt lt lt rt rt rt"
     "lm lm lm rm rm rm"
     "lb lb mb mb rb rb"; 
-  height: 60%; 
+  height: 50%; 
   text-align: center;
 }
-.lb { grid-area: lb; background-color: plum; border-radius: 2%; }
-.mb { grid-area: mb; background-color: plum; border-radius: 2%; }
-.rb { grid-area: rb; background-color: plum; border-radius: 2%; }
-.lt { grid-area: lt; background-color: plum; border-radius: 2%;}
-.rt { grid-area: rt; background-color: plum; border-radius: 2%;}
-.lm { grid-area: lm; background-color: plum; border-radius: 2%;}
-.rm { grid-area: rm; background-color: plum; border-radius: 2%;}
+.lb { grid-area: lb; background-color: #f5f5f7; border-radius: 0%; }
+.mb { grid-area: mb; background-color: #f5f5f7; border-radius: 0; }
+.rb { grid-area: rb; background-color: #f5f5f7; border-radius: 0%; }
+.lt { grid-area: lt; background-color: #f5f5f7; border-radius: 0%;}
+.rt { grid-area: rt; background-color: #f5f5f7; border-radius: 0%;}
+.lm { grid-area: lm; background-color: #f5f5f7; border-radius: 0%;}
+.rm { grid-area: rm; background-color: #f5f5f7; border-radius: 0%;}
 .lb:hover, .mb:hover, .rb:hover, .lt:hover, .rt:hover, .lm:hover, .rm:hover { background-color: orchid;}
 
 .projecthigh {
-  margin: 1em 1em;
+  margin: 0em 0em;
   min-width: 100px;
 }
 .projectimg {
   border-radius: 0%;
   max-width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 .projectimghigh {
   border-radius: 0%;
   max-width: 100%;
   max-height: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
-.projectlogo {
-  max-height: 50px;
+.projecthigh h3 {
+  font-size: 1.5em;
 }
-
+.projecthigh p {
+  margin-bottom: 1px;
+}
 /* links */
 .projects a:link {
   text-decoration: none;
@@ -155,7 +175,7 @@ nav .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 15px 0px;
+  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
   
@@ -206,9 +226,43 @@ nav .active {
 .about {
   margin: 2em 0 0 0;
 }
+.about p{
+  max-width: 40%;
+}
 
+/* Projects page */
+.projectstitle {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.projectsimage {
+  max-width: 42%;
+  margin: 2%;
+}
+.projectarticle {
+  margin-top: 3em;
+}
 
 @media (min-width: 767px) and (max-width: 1024px) {
   h2 { font-size: 36px; }
 }
+/* Resume page */
 
+.rsmsection {
+  display: grid; 
+  grid-template-columns: 25% 75%; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "rsmleft rsmright"; 
+  height: 60%; 
+}
+.rsmleft { grid-area: rsmleft; }
+.rsmright { grid-area: rsmright; }
+
+.resumephoto {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 3%;
+}
