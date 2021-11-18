@@ -113,32 +113,33 @@ nav .active {
 .projects {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 32% 32% 36%; 
-  gap: 10px 10px; 
+  grid-template-rows: 60% 40%; 
+  gap: 5em 5em; 
   grid-template-areas: 
     "lt lt lt rt rt rt"
-    "lm lm lm rm rm rm"
     "lb lb mb mb rb rb"; 
-  height: 50%; 
   text-align: center;
 }
-.lb { grid-area: lb; background-color: #f5f5f7; border-radius: 0%; }
-.mb { grid-area: mb; background-color: #f5f5f7; border-radius: 0; }
-.rb { grid-area: rb; background-color: #f5f5f7; border-radius: 0%; }
-.lt { grid-area: lt; background-color: #f5f5f7; border-radius: 0%;}
-.rt { grid-area: rt; background-color: #f5f5f7; border-radius: 0%;}
-.lm { grid-area: lm; background-color: #f5f5f7; border-radius: 0%;}
-.rm { grid-area: rm; background-color: #f5f5f7; border-radius: 0%;}
-.lb:hover, .mb:hover, .rb:hover, .lt:hover, .rt:hover, .lm:hover, .rm:hover { background-color: orchid;}
+.lb { grid-area: lb; border: 1px solid turquoise; border-radius: 0%; }
+.mb { grid-area: mb; border: 1px solid turquoise; border-radius: 0; }
+.rb { grid-area: rb; border: 1px solid turquoise; border-radius: 0%; }
+.lt { grid-area: lt; border: 1px solid turquoise; border-radius: 0%;}
+.rt { grid-area: rt; border: 1px solid turquoise; border-radius: 0%;}
+.lb:hover, .mb:hover, .rb:hover, .lt:hover, .rt:hover, .lm:hover, .rm:hover { border: 1px solid purple;}
 
 .projecthigh {
   margin: 0em 0em;
   min-width: 100px;
 }
-.projectimg {
+.projectimgleft {
   border-radius: 0%;
   max-width: 100%;
-  margin-bottom: 1%;
+  margin-bottom: 0%;
+}
+.projectimgright {
+  border-radius: 0%;
+  max-width: 100%;
+  margin-bottom: 0%;
 }
 .projectimghigh {
   border-radius: 0%;
@@ -148,10 +149,18 @@ nav .active {
 }
 .projecthigh h3 {
   font-size: 1.5em;
+  font-weight: bold;
 }
 .projecthigh p {
   margin-bottom: 1px;
 }
+.lt h3 {
+  padding-top: 5%;
+}
+.rt h3 {
+  padding-top: 5%;
+}
+
 /* links */
 .projects a:link {
   text-decoration: none;
@@ -165,10 +174,13 @@ nav .active {
 
 .projects a:hover {
   text-decoration: none;
+  color:purple;
+
 }
 
 .projects a:active {
   text-decoration: none;
+  color:purple;
 }
 
 .interests {
@@ -237,8 +249,14 @@ nav .active {
   margin-top: 1em;
 }
 .projectsimage {
-  max-width: 42%;
+  max-width: 96%;
   margin: 2%;
+  border: 1px solid turquoise;
+}
+.projectsimagedouble {
+  max-width: 47%;
+  margin: 1%;
+  border: 1px solid turquoise;
 }
 .projectarticle {
   margin-top: 3em;
@@ -262,7 +280,7 @@ nav .active {
 .rsmright { grid-area: rsmright; }
 
 .resumephoto {
-  max-height: 80%;
-  max-width: 80%;
-  margin: 3%;
+  max-height: 70%;
+  max-width: 70%;
+  margin: 10%;
 }
