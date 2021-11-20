@@ -101,10 +101,10 @@ nav .active {
   grid-row: 1;
 }
 .herocontainer {
-  padding: 10rem 0 0 4rem;
+  padding: 10rem 0 0 8rem;
 }
 .heroimg {
-  padding: 3rem 0 0 5rem;
+  padding: 3rem 0 0 8rem;
   width: 50%;
   height: 75%;
   object-fit: cover;
@@ -113,7 +113,7 @@ nav .active {
 .projects {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 60% 40%; 
+  grid-template-rows: 57% 40%; 
   gap: 5em 5em; 
   grid-template-areas: 
     "lt lt lt rt rt rt"
@@ -130,6 +130,7 @@ nav .active {
 .projecthigh {
   margin: 0em 0em;
   min-width: 100px;
+  border: 1 px solid purple;
 }
 .projectimgleft {
   border-radius: 0%;
