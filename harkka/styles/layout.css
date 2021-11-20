@@ -310,7 +310,7 @@ main {
 }
 .interests {
   display: grid;
-  grid-template-columns: 0fr 0.5fr 1fr 1fr;
+  grid-template-columns: 0fr 0.3fr 1fr 1fr;
   grid-template-rows: 0fr 1fr 0fr 1fr 0fr 1fr 0fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
