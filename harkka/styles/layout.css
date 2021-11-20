@@ -238,8 +238,6 @@ nav .active {
 
 .about {
   margin: 2em 0 0 0;
-}
-.about p{
   max-width: 40%;
 }
 
@@ -263,9 +261,6 @@ nav .active {
   margin-top: 3em;
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
-  h2 { font-size: 36px; }
-}
 /* Resume page */
 
 .rsmsection {
@@ -284,4 +279,69 @@ nav .active {
   max-height: 70%;
   max-width: 70%;
   margin: 10%;
+}
+/* tablet */
+@media (min-width: 879px) and (max-width: 1124px) {
+main {
+    width: 95%;
+}
+.herocontainer {
+  padding: 5rem 0 0 4rem;
+}
+.projects {
+  grid-template-rows: 57% 43%; 
+  gap: 2em 2em; 
+}
+.interests {
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+}
+.about {
+  margin: 2em 0 0 0;
+  max-width: 60%;
+}
+}
+
+@media (min-width: 1px) and (max-width: 878px) {
+  main {
+    width: 98%;
+}
+.interests {
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr 0fr 1fr 0fr 1fr 0fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  
+    "left nr1 t1 t1"
+    "left nr2 c1 c1"
+    "left nr3 t3 t3"
+    "left nr4 c2 c2"
+    "left nr5 t5 t5"
+    "left nr6 c3 c3"
+    "left nr7 t7 t7"
+    "left nr8 c4 c4";
+}
+.projects {
+  grid-template-rows: 52% 48%; 
+  gap: 1em 1em; 
+}
+.about {
+  margin: 2em 0 0 0;
+  max-width: 80%;
+}
+.hero {
+  grid-template-columns: 60% 40%;
+}
+.herocontainer {
+padding: 2rem 0 0 0rem;
+}
+.heroimg {
+padding: 1rem 0 0 1rem;
+width: 95%;
+object-fit: cover;
+}
+h3 {
+  font-size: 1.7em;
+}
 }
