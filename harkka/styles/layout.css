@@ -309,25 +309,25 @@ main {
     width: 98%;
 }
 .interests {
-  display: grid;
   grid-template-columns: 0fr 0.3fr 1fr 1fr;
   grid-template-rows: 0fr 1fr 0fr 1fr 0fr 1fr 0fr 1fr;
   gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-  
-    "left nr1 t1 t1"
-    "left nr2 c1 c1"
-    "left nr3 t3 t3"
-    "left nr4 c2 c2"
-    "left nr5 t5 t5"
-    "left nr6 c3 c3"
-    "left nr7 t7 t7"
-    "left nr8 c4 c4";
 }
 .projects {
-  grid-template-rows: 52% 48%; 
+  grid-template-rows: 40% 0% 40%; 
   gap: 1em 1em; 
+  grid-template-areas: 
+  "lt lt lt rt rt rt"
+  "lb lb mb mb rb rb"
+  "lbb lbb lbb rbb rbb rbb"; 
+}
+.lbb { grid-area: lbb; border: 1px solid turquoise; border-radius: 0%;}
+.rbb { grid-area: rbb; border: 1px solid turquoise; border-radius: 0%;}
+.lbb:hover, .rbb:hover { border: 1px solid purple;}
+
+.lb { visibility: hidden; }
+.mb { visibility: hidden; }
+.rb { visibility: hidden; }
 }
 .about {
   margin: 2em 0 0 0;
@@ -349,5 +349,4 @@ object-fit: cover;
 }
 .projectheading {
   margin: 3em 0 1em 0;
-}
 }
