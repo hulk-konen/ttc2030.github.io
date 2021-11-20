@@ -299,6 +299,9 @@ main {
   margin: 2em 0 0 0;
   max-width: 60%;
 }
+.projectheading {
+  margin: 5em 0 1em 0;
+}
 }
 
 @media (min-width: 1px) and (max-width: 878px) {
@@ -307,7 +310,7 @@ main {
 }
 .interests {
   display: grid;
-  grid-template-columns: 0fr 1fr 1fr 1fr;
+  grid-template-columns: 0fr 0.5fr 1fr 1fr;
   grid-template-rows: 0fr 1fr 0fr 1fr 0fr 1fr 0fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -334,14 +337,17 @@ main {
   grid-template-columns: 60% 40%;
 }
 .herocontainer {
-padding: 2rem 0 0 0rem;
+padding: 5rem 1rem 0 0rem;
 }
 .heroimg {
-padding: 1rem 0 0 1rem;
-width: 95%;
+padding: 3rem 0 0 1rem;
+width: 94%;
 object-fit: cover;
 }
-h3 {
-  font-size: 1.7em;
+.rsmsection h3 {
+  font-size: 1.4em;
+}
+.projectheading {
+  margin: 3em 0 1em 0;
 }
 }
