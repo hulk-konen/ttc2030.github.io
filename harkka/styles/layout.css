@@ -298,6 +298,11 @@ main {
 .herocontainer {
   padding: 5rem 0 0 4rem;
 }
+.top-projects, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
 .interests {
   grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
 }
@@ -314,7 +319,7 @@ main {
 }
 
 @media (min-width: 1px) and (max-width: 878px) {
-  main {
+main {
     width: 98%;
 }
 .interests {
@@ -324,7 +329,7 @@ main {
 }
 .top-projects, .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-gap: 10px;
   
 }
@@ -348,5 +353,10 @@ object-fit: cover;
 }
 .projectheading {
   margin: 3em 0 1em 0;
+}
+.projectsimagedouble {
+  max-width: 67%;
+  margin: 1%;
+  border: 1px solid turquoise;
 }
 }
