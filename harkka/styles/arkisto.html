@@ -40,3 +40,21 @@ projects {
     "lb lb mb mb rb rb"
     "lbb lbb lbb rbb rbb rbb"; 
   }
+
+
+  .hero {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 60%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.hero .left {
+    grid-column: 1 / 1;
+    grid-row: 1;
+  }
+  .hero .right {
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }

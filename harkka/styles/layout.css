@@ -85,27 +85,29 @@ nav .active {
   text-decoration: underline;
 }
 /* hero section */
+
+
 .hero {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    min-height: 60%;
-    justify-items: stretch;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  justify-items: stretch;
+  align-items: stretch;
+  
 }
-.hero .left {
-  grid-column: 1 / 1;
-  grid-row: 1;
+.hero  {
+  max-width: 960px;
+  margin: 0 auto 30px;
 }
-.hero .right {
-  grid-column: 2 / 2;
-  grid-row: 1;
-}
+
 .herocontainer {
+  grid-column: span 1;
   padding: 10rem 0 0 8rem;
 }
 .heroimg {
-  padding: 3rem 0 0 8rem;
-  width: 50%;
+  grid-column: span 1;
+  padding: 4rem 0 0 4rem;
+  width: 75%;
   height: 75%;
   object-fit: cover;
 }
@@ -291,12 +293,12 @@ nav .active {
   margin: 10%;
 }
 /* tablet */
-@media (min-width: 879px) and (max-width: 1124px) {
+@media (min-width: 825px) and (max-width: 1124px) {
 main {
     width: 95%;
 }
-.herocontainer {
-  padding: 5rem 0 0 4rem;
+.hero {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .top-projects, .projects {
   display: grid;
@@ -313,12 +315,9 @@ main {
 .projectheading {
   margin: 5em 0 1em 0;
 }
-.top-projects, .projects {
-  grid-gap: 20px;
-}
 }
 
-@media (min-width: 1px) and (max-width: 878px) {
+@media (min-width: 1px) and (max-width: 824px) {
 main {
     width: 98%;
 }
@@ -329,7 +328,7 @@ main {
 }
 .top-projects, .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 10px;
   
 }
@@ -338,14 +337,14 @@ main {
   max-width: 80%;
 }
 .hero {
-  grid-template-columns: 70% 30%;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
 .herocontainer {
-  padding: 5rem 1rem 0 0rem;
+  padding: 3rem 1rem 0 0rem;
 }
 .heroimg {
-  padding: 7rem 0 0 1rem;
-  width: 90%;
+  padding: 2rem 0 0 1rem;
+  width: 75%;
   object-fit: cover;
 }
 .rsmsection h3 {
@@ -364,5 +363,8 @@ visibility: hidden;
   max-width: 67%;
   margin: 1%;
   border: 1px solid turquoise;
+}
+.projects {
+  grid-column: span 3;
 }
 }
