@@ -329,7 +329,7 @@ main {
 }
 .top-projects, .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   grid-gap: 10px;
   
 }
@@ -338,14 +338,14 @@ main {
   max-width: 80%;
 }
 .hero {
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
 }
 .herocontainer {
   padding: 5rem 1rem 0 0rem;
 }
 .heroimg {
-  padding: 3rem 0 0 1rem;
-  width: 93%;
+  padding: 7rem 0 0 1rem;
+  width: 90%;
   object-fit: cover;
 }
 .rsmsection h3 {
