@@ -341,15 +341,21 @@ main {
   grid-template-columns: 60% 40%;
 }
 .herocontainer {
-padding: 5rem 1rem 0 0rem;
+  padding: 5rem 1rem 0 0rem;
 }
 .heroimg {
-padding: 3rem 0 0 1rem;
-width: 93%;
-object-fit: cover;
+  padding: 3rem 0 0 1rem;
+  width: 93%;
+  object-fit: cover;
 }
 .rsmsection h3 {
-  font-size: 1em;
+visibility: hidden;
+}
+.resumephoto {
+  visibility: hidden;
+}
+.rsmsection {
+  grid-template-columns: 5% 95%; 
 }
 .projectheading {
   margin: 3em 0 1em 0;
