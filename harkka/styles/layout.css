@@ -97,18 +97,17 @@ nav .active {
 }
 .hero  {
   max-width: 960px;
-  margin: 0 auto 30px;
+  margin: 0 auto 0px;
 }
 
 .herocontainer {
   grid-column: span 1;
-  padding: 10rem 0 0 8rem;
+  padding: 27% 0 0 10%;
 }
 .heroimg {
   grid-column: span 1;
-  padding: 4rem 0 0 4rem;
+  padding: 10% 0 0 10%;
   width: 75%;
-  height: 75%;
   object-fit: cover;
 }
 /* projects */
@@ -317,7 +316,7 @@ main {
   max-width: 60%;
 }
 .projectheading {
-  margin: 5em 0 1em 0;
+  margin: 4em 0 1em 0;
 }
 }
 
@@ -344,10 +343,10 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
 .herocontainer {
-  padding: 3rem 1rem 0 0rem;
+  padding: 10% 5% 0 0rem;
 }
 .heroimg {
-  padding: 2rem 0 0 1rem;
+  padding: 10% 0 0 10%;
   width: 75%;
   object-fit: cover;
 }
