@@ -175,26 +175,19 @@ nav .active {
 .top-projects a:link, .projects a:link {
   text-decoration: none;
   color: black;
-
 }
-
 .top-projects a:visited, .projects  a:visited {
   text-decoration: none;
   color: black;
-
 }
-
 .top-projects a:hover, .projects  a:hover {
   text-decoration: none;
   color: purple
-
 }
-
 .top-projects a:active, .projects  a:active {
   text-decoration: none;
   color: purple;
 }
-
 .interests {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -254,6 +247,23 @@ nav .active {
 
 .footer-social {
   height: 40px;
+}
+
+.footer-social a:link, .projects a:link {
+  text-decoration: none;
+  color: black;
+}
+.footer-social a:visited, .projects  a:visited {
+  text-decoration: none;
+  color: black;
+}
+.footer-social a:hover, .projects  a:hover {
+  text-decoration: none;
+  color: purple
+}
+.footer-social a:active, .projects  a:active {
+  text-decoration: none;
+  color: purple;
 }
 
 /* Projects page */
