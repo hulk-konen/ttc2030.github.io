@@ -1,0 +1,60 @@
+<div class="lm">
+    <a href="http://google3.com">
+    <div class="projecthigh" >
+        <img src="images/examos.jpg" alt="test" class="projectimg">
+        <h3>ExamOS</h3>
+        <p>Secure exam platform.</p>
+        <br>
+    </div>
+    </a>
+</div>
+
+"lm lm lm rm rm rm"
+.lm { grid-area: lm; border: 1px solid #f5f5f7; border-radius: 0%;}
+.rm { grid-area: rm; border: 1px solid #f5f5f7; border-radius: 0%;}
+
+
+projects {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 57% 40%; 
+    gap: 5em 5em; 
+    grid-template-areas: 
+      "lt lt lt rt rt rt"
+      "lb lb mb mb rb rb"; 
+    text-align: center;
+  }
+  .lb { grid-area: lb; border: 1px solid turquoise; border-radius: 0%; }
+  .mb { grid-area: mb; border: 1px solid turquoise; border-radius: 0; }
+  .rb { grid-area: rb; border: 1px solid turquoise; border-radius: 0%; }
+  .lt { grid-area: lt; border: 1px solid turquoise; border-radius: 0%;}
+  .rt { grid-area: rt; border: 1px solid turquoise; border-radius: 0%;}
+  .lb:hover, .mb:hover, .rb:hover, .lt:hover, .rt:hover, .lm:hover, .rm:hover { border: 1px solid purple;}
+
+  
+  .projects {
+    grid-template-rows: 40% 0% 40%; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    "lt lt lt rt rt rt"
+    "lb lb mb mb rb rb"
+    "lbb lbb lbb rbb rbb rbb"; 
+  }
+
+
+  .hero {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 60%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.hero .left {
+    grid-column: 1 / 1;
+    grid-row: 1;
+  }
+  .hero .right {
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }
